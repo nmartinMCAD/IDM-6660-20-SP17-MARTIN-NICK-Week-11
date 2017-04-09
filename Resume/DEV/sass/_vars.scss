@@ -8,5 +8,6 @@ $header-weight: 700;
 $subhead-weight: 400;
 $copy-weight: 300;
 
-$tablet-width: "screen and (min-width: 480px)";
+$phone-width: "screen and (max-width: 480px)";
+$tablet-width: "screen and (min-width: 481px)";
 $desktop-width: "screen and (min-width: 760px)";

@@ -1,0 +1,38 @@
+@include phone {
+  input {
+    display: none;
+  }
+
+  nav {
+    background-color: $yellow;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    overflow-y: none;
+  }
+
+  nav ul {
+    margin: 2rem;
+    list-style-type: none;
+  }
+
+  nav a {
+    color: $white;
+    font-size: 3em;
+  }
+
+  nav label {
+    display: block;
+    width: 33.33%;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .menu-controller-checkbox ~ nav { transition: left .666s ease; }
+
+  .menu-controller-checkbox:checked ~ nav { left: 0; }
+}

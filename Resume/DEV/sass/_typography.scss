@@ -1,0 +1,46 @@
+body {
+  font-family: $font;
+  font-size: 16px;
+  color: $black;
+}
+
+p, a {
+  font-weight: $copy-weight;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+///*phone styles*///
+@include phone {
+  h1 {
+    font-weight: $header-weight;
+    font-size: 28vw;
+    line-height: .8;
+  }
+
+  label.menubttn, a.homebttn {
+    position: absolute;
+    top: 1rem;
+    color: $white;
+    font-size: 1.5em;
+    font-weight: $header-weight;
+  }
+
+  label.menubttn {
+    left: 1rem;
+    cursor: pointer;
+  }
+
+  a.homebttn {
+    right: 1rem;
+  }
+}
+
+@include tablet {
+  h1 {
+    font-size: 7em;
+  }
+}

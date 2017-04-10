@@ -13,12 +13,45 @@ a {
   color: $black;
 }
 
+
 ///*phone styles*///
 @include phone {
   h1 {
     font-weight: $header-weight;
     font-size: 28vw;
     line-height: .8;
+  }
+
+  h2 {
+    font-size: 10vw;
+    text-align: center;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 7vw;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    margin-top: 2rem;
+  }
+
+  main ul {
+    text-align: center;
+  }
+
+  main ul li {
+    line-height: 1.5;
+  }
+
+  ul.plist li {
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   label.menubttn, a.homebttn {
@@ -42,5 +75,11 @@ a {
 @include tablet {
   h1 {
     font-size: 7em;
+    text-align: right;
+    line-height: .95;
+  }
+
+  label, input {
+    display: none;
   }
 }

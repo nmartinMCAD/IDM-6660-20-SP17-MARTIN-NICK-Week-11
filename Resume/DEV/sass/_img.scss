@@ -1,5 +1,5 @@
 img {
-  max-width: 700px;
+  max-width: 600px;
 }
 
 @include phone {
@@ -12,5 +12,9 @@ img {
   img {
     float: right;
     width: 70%;
+  }
+
+  ul img {
+    display: none;
   }
 }

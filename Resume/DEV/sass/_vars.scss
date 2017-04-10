@@ -1,6 +1,7 @@
 $black: #111;
 $yellow: #FFDC00;
 $white: #fff;
+$transparent: HSLA(192, 100%, 8%, 0.0);
 
 $font: 'Rubik', Helvetica, sans-serif;
 
@@ -10,4 +11,4 @@ $copy-weight: 300;
 
 $phone-width: "screen and (max-width: 480px)";
 $tablet-width: "screen and (min-width: 481px)";
-$desktop-width: "screen and (min-width: 760px)";
+$desktop-width: "screen and (min-width: 1000px)";

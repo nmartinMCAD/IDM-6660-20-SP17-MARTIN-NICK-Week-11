@@ -1,20 +1,5 @@
 img {
-  max-width: 600px;
-}
-
-@include phone {
-  img {
-    width: 100%;
-  }
-}
-
-@include tablet {
-  img {
-    float: right;
-    width: 70%;
-  }
-
-  ul img {
-    display: none;
-  }
+  max-width: 500px;
+  width: 100%;
+  margin-top: 12vw;
 }

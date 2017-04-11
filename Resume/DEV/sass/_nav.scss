@@ -1,130 +1,38 @@
-
-  input {
-    display: none;
-  }
-
-  nav {
-    background-color: $yellow;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    overflow-y: none;
-  }
-
-  nav ul {
-    margin: 2rem;
-    list-style-type: none;
-  }
-
-  nav a {
-    color: $white;
-    font-size: 3em;
-  }
-
-  nav label {
-    display: block;
-    width: 33.33%;
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    cursor: pointer;
-  }
-
-  .menu-controller-checkbox ~ nav { transition: left .666s ease; }
-
-  .menu-controller-checkbox:checked ~ nav { left: 0; }
-
-  header.subpagehead {
-    background-color: $yellow;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    h1 {
-      font-size: 8vw;
-      margin-top: 1rem;
-      text-align: center;
-      color: $black;
-    }
+input {
+  display: none;
 }
 
-main {
-    width: 95%;
-    margin: auto;
-    margin-top: 6rem;
+nav {
+  background-color: $yellow;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  overflow-y: none;
+  z-index: 10;
 }
 
-
-@include tablet {
-  body {
-    max-width: 600px;
-    margin: auto;
-    margin-top: 8rem;
-  }
-
-  header {
-    width: 25%;
-    float: left;
-    text-align: right;
-    a {
-      font-size: 2em;
-    }
-  }
-
-  nav a {
-    color: $black;
-  }
-
-  ul {
-    list-style-type: none;
-  }
-
-  body.subpagebody {
-    width: 65%;
-    float: right;
-    margin: 1rem;
-  }
-
-  header.subpagehead {
-    width: 30%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin: 1rem;
-    text-align: left;
-    background-color: $transparent;
-
-    h1 {
-      font-size: 8vw;
-      text-align: left;
-      color: $black;
-    }
-  }
-
-@include desktop {
-  body.subpagebody {
-    width: 800px;
-    margin: auto;
-    float: none;
-  }
-
-  header.subpagehead {
-    width: 20%;
-    text-align: left;
-
-    h1 {
-      font-size: 4em;
-      text-align: left;
-      color: $black;
-    }
-  }
-
-  main {
-    width: 75%;
-    float: left;
-  }
+nav ul {
+  margin: 2rem;
+  list-style-type: none;
+  text-align: left;
 }
+
+nav a {
+  color: $white;
+  font-size: 3em;
 }
+
+nav label {
+  display: block;
+  width: 33.33%;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.menu-controller-checkbox ~ nav { transition: left .666s ease; }
+
+.menu-controller-checkbox:checked ~ nav { left: 0; }

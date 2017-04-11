@@ -1,0 +1,38 @@
+header {
+  background-color: $black;
+  height: 14vw;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  text-align: center;
+}
+
+label.menubttn, a.homebttn {
+  position: absolute;
+  top: 4vw;
+}
+
+label.menubttn {
+  left: 3vw;
+}
+
+a.homebttn {
+  right: 3vw;
+}
+
+main {
+  width: 95%;
+  margin: auto;
+  margin-top: 20vw;
+  margin-bottom: 6rem;
+  max-width: 700px;
+}
+
+div.contact {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}

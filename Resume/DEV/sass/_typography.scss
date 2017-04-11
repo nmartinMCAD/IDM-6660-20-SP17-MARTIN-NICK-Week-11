@@ -1,85 +1,85 @@
 body {
   font-family: $font;
-  font-size: 16px;
-  color: $black;
 }
 
-p, a {
-  font-weight: $copy-weight;
-}
-
-a {
+header label, header a, nav a {
+  color: $white;
   text-decoration: none;
+  cursor: pointer;
+}
+
+label.menubttn, a.homebttn {
+  font-size: 6vw;
+  font-weight: $header-weight;
+}
+
+h1 {
+  font-family: $decorative-font;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 6vw;
+  margin-top: 3vw;
+}
+
+h2.sequence-bttn {
+  text-align: right;
+  padding-right: 3vw;
+  font-size: 18vw;
+  margin-bottom: 3rem;
+}
+
+a.sequence-bttn {
   color: $black;
+  text-decoration: none;
 }
 
-
-///*phone styles*///
-@include phone {
-  h1 {
-    font-weight: $header-weight;
-    font-size: 28vw;
-    line-height: .8;
-  }
-
-  h2 {
-    font-size: 10vw;
-    text-align: center;
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
-  }
-
-  h3 {
-    text-align: center;
-    font-size: 7vw;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-  }
-
-  h4 {
-    margin-top: 2rem;
-  }
-
-  main ul {
-    text-align: center;
-  }
-
-  main ul li {
-    line-height: 1.5;
-  }
-
-  ul.plist li {
-    text-align: left;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  label.menubttn, a.homebttn {
-    position: absolute;
-    top: 1rem;
-    color: $white;
-    font-size: 1.5em;
-    font-weight: $header-weight;
-  }
-
-  label.menubttn {
-    left: 1rem;
-    cursor: pointer;
-  }
-
-  a.homebttn {
-    right: 1rem;
-  }
+h2 {
+  font-size: 10vw;
 }
 
-@include tablet {
-  h1 {
-    font-size: 7em;
-    text-align: right;
-    line-height: .95;
-  }
+h3 {
+  margin: 2rem 0 1rem 0;
+  font-size: 7vw;
+  font-weight: $subhead-weight;
+  border-bottom: 1px solid $black;
+}
 
-  label, input {
-    display: none;
-  }
+h4 {
+  font-size: 5vw;
+  margin-top: 2rem;
+}
+
+h5 {
+  font-size: 4vw;
+}
+
+h6 {
+  font-size: 3vw;
+  color: $orange;
+}
+
+ul {
+  margin: .5rem 0 1rem 0;
+}
+
+p {
+  font-weight: $copy-weight;
+  margin: .5rem 0 1rem 0;
+  line-height: 1.4;
+}
+
+div.skills p {
+  margin: 0;
+}
+
+i {
+  margin-right: 1rem;
+}
+
+h2.sequence-bttn i {
+  margin: 0;
+}
+
+div.contact .fa-mobile, div.contact .fa-linkedin-square {
+  font-size: 1.5em;
 }

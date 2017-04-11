@@ -1,0 +1,163 @@
+body {
+  font-family: $font;
+}
+
+header label, header a, nav a {
+  color: $white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label.menubttn, a.homebttn {
+  font-size: 6vw;
+  font-weight: $header-weight;
+  position: absolute;
+  top: 4vw;
+
+  @include tablet {
+    font-size: 1.7em;
+    top: 1rem;
+  }
+}
+
+label.menubttn {
+  left: 3vw;
+
+  @include tablet {
+    left: 1rem;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+a.homebttn {
+  right: 3vw;
+
+  @include tablet {
+    right: 1rem;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}
+
+h1 {
+  font-family: $decorative-font;
+  text-transform: uppercase;
+  color: $white;
+  font-size: 6vw;
+  margin-top: 3vw;
+
+  @include tablet {
+    font-size: 1.7em;
+    margin-top: 1rem;
+  }
+
+  @include desktop {
+    margin-left: 1rem;
+  }
+}
+
+h2.sequence-bttn {
+  text-align: right;
+  padding-right: 3vw;
+  font-size: 18vw;
+  margin-bottom: 1.5rem;
+
+  @include tablet {
+    padding-right: 1rem;
+    font-size: 5.8em;
+  }
+
+  @include desktop {
+    font-size: 3em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+a.sequence-bttn {
+  color: $black;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 10vw;
+
+  @include tablet {
+    font-size: 3.33em;
+  }
+}
+
+h3 {
+  margin: 2rem 0 1rem 0;
+  font-size: 7vw;
+  font-weight: $subhead-weight;
+  border-bottom: 1px solid $black;
+
+  @include tablet {
+    font-size: 2em;
+  }
+}
+
+h4 {
+  font-size: 5vw;
+  margin-top: 2rem;
+
+  @include tablet {
+    font-size: 1.6em;
+  }
+}
+
+h5 {
+  font-size: 4vw;
+
+  @include tablet {
+    font-size: 1.3em;
+  }
+}
+
+h6 {
+  font-size: 3vw;
+  color: $orange;
+
+  @include tablet {
+    font-size: .9em;
+  }
+}
+
+ul {
+  margin: .5rem 0 1rem 0;
+}
+
+p {
+  font-weight: $copy-weight;
+  margin: .5rem 0 1rem 0;
+  line-height: 1.4;
+
+  @include tablet {
+    font-size: 1.1em;
+    line-height: 1.5;
+  }
+}
+
+div.skills p {
+  margin: 0;
+}
+
+i {
+  margin-right: 1rem;
+}
+
+h2.sequence-bttn i {
+  margin: 0;
+}
+
+div.contact .fa-mobile, div.contact .fa-linkedin-square {
+  font-size: 1.5em;
+}

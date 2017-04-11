@@ -11,17 +11,40 @@ nav {
   height: 100%;
   overflow-y: none;
   z-index: 10;
+
+  @include desktop {
+    background-color: $transparent;
+    position: static;
+  }
 }
 
 nav ul {
   margin: 2rem;
   list-style-type: none;
   text-align: left;
+
+  @include desktop {
+    position: absolute;
+    top: -1rem;
+    right: 0;
+  }
+}
+
+nav ul li {
+  @include desktop {
+    display: inline;
+    margin-left: 1.5rem;
+  }
 }
 
 nav a {
   color: $white;
   font-size: 3em;
+
+  @include desktop {
+    font-size: 2em;
+    font-weight: $subhead-weight;
+  }
 }
 
 nav label {
@@ -31,6 +54,14 @@ nav label {
   bottom: 1rem;
   right: 1rem;
   cursor: pointer;
+
+  @include tablet {
+    width: 10rem;
+  }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .menu-controller-checkbox ~ nav { transition: left .666s ease; }
